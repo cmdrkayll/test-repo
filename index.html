@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.democraticunderground.com/du4img/favicon.png"/>
     <title>Security Check - Democratic Underground</title>
     <style>
         @font-face {
@@ -37,24 +38,25 @@
           src: url('../du4fonts/roboto-v30-cyrillic_greek_latin_latin-ext-700italic.woff2') format('woff2'),
                url('../du4fonts/roboto-v30-cyrillic_greek_latin_latin-ext-700italic.ttf') format('truetype');
         }
-        body { font-family: Roboto, sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        .container { width: 100%; max-width: 800px; margin: 0 30px; background: white; padding: 40px; border-radius: 8px; }
-        img.logo { max-width: 200px; margin-bottom: 20px; }
+        body { font-family: Roboto, sans-serif; text-align: center; padding: 15px 0px; background: #fafafa; margin: 0; }
+        .header { width: 100%; max-width: 400px; margin: 10px auto 0 auto; }
+        .header img { width: 174px; }
+        .container { width: calc(100% - 20px); max-width: 400px; margin: 0 auto; padding: 0px 10px; }
+        .container img { width: 150px; }
+        .footer { font-size: 0.8642em; width: 100%; max-width: 800px; margin: 15px auto 0 auto; text-align: center; }
     </style>
 </head>
 <body>
-
+    <div class="header">
+        <img src="https://upload.democraticunderground.com/imgs/du-botcheck-logo.png">
+    </div>
     <div class="container">        
         <h2>You're not a robot, but I am.</h2>
         <img src="https://upload.democraticunderground.com/imgs/grovelbot-transparent.png">
         <p>And they've got me out here asking you to check this box for security purposes. Can you believe it?</p>
-
-        <!-- MANDATORY CLOUDFLARE SECURITY CHALLENGE WINDOW (For the final live page)
-        <div style="margin: 30px 0;">
-            ::IM_UNDER_ATTACK_BOX::
-        </div> -->
-        ::CLOUDFLARE_ERROR_1000S_BOX::
+        ::IM_UNDER_ATTACK_BOX::
     </div>
-
+    <div class="footer">Performance and Security by <a rel="noopener noreferrer" href="https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=p" target="_blank" ">Cloudflare</a> | <a target="_blank" rel="noopener noreferrer" href="https://www.cloudflare.com/privacypolicy/">Privacy</a>
+    </div>
 </body>
 </html>
